@@ -9,13 +9,12 @@ public class mataKuliahDemo07 {
         int sks, jumlahJam;
 
         for(int i = 0; i < 3; i++){
-            arrayOfMataKuliah[i] = new mataKuliah07();
             System.out.println("Masukkan Data Mahasiswa ke-" + (i+1));
             System.out.print("KODE    : ");
-            arrayOfMataKuliah[i].kode = sc.nextLine();
+            kode = sc.nextLine();
 
             System.out.print("NAMA    : ");
-            arrayOfMataKuliah[i].nama = sc.nextLine();
+            nama = sc.nextLine();
 
             System.out.print("SKS     : ");
             dummy = sc.nextLine();
@@ -26,7 +25,12 @@ public class mataKuliahDemo07 {
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("---------------------------------------");
 
-            arrayOfMataKuliah[i] = new mataKuliah("4567","DASPRO", 4,5);
+            arrayOfMataKuliah[i] = new mataKuliah07(kode, nama, sks, jumlahJam);
+        }
+
+        for (int i = 0; i < 3; i++){
+            System.out.println("Data Matakuliah ke-" + (i+1));
+            System.out.println("");
         }
     }
 }
