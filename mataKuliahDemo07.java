@@ -9,7 +9,7 @@ public class mataKuliahDemo07 {
         int sks, jumlahJam;
 
         for(int i = 0; i < 3; i++){
-            System.out.println("Masukkan Data Mahasiswa ke-" + (i+1));
+            System.out.println("Masukkan Data Matakuliah ke-" + (i+1));
             System.out.print("KODE    : ");
             kode = sc.nextLine();
 
@@ -30,7 +30,12 @@ public class mataKuliahDemo07 {
 
         for (int i = 0; i < 3; i++){
             System.out.println("Data Matakuliah ke-" + (i+1));
-            System.out.println("");
+            System.out.println("KODE        : " + arrayOfMataKuliah[i].kode);
+            System.out.println("NAMA        : " + arrayOfMataKuliah[i].nama);
+            System.out.println("SKS         : " + arrayOfMataKuliah[i].sks);
+            System.out.println("JUMLAH JAM  : " + arrayOfMataKuliah[i].jumlahJam);
+            System.out.println("---------------------------------------");
+            
         }
     }
 }
